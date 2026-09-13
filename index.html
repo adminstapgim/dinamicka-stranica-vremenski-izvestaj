@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Vremenski izveštaj</title>
+    </head>
+    <body bgcolor="LightSkyBlue" text="DarkSlateGrey"><center>
+        <h1>Vremenski izveštaj</h1>
+		<img src="https://lh3.googleusercontent.com/d/1CTg5vOx6cXKg4hilbx1fnWq-r8HAuTrv" height="150" />
+        <br /><br />
+        <form method="get" action="https://api.open-meteo.com/v1/forecast">
+		    <input type="checkbox" name="current" value="temperature" /> Temperatura&nbsp;&nbsp;
+			<input type="checkbox" name="current" value="surface_pressure" /> Vazdušni pritisak&nbsp;&nbsp;
+			<input type="checkbox" name="current" value="cloud_cover" /> Oblačnost&nbsp;&nbsp;
+			<input type="checkbox" name="current" value="precipitation_probability" /> Verovatnoća padavina
+			<br /><br /><hr /><br />
+            <input type="text" size="13" name="latitude" placeholder="Geografska širina" required />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" size="13" name="longitude" placeholder="Geografska dužina" required />     
+            <br /><br /><hr /><br />
+            <input type="submit" value="Vremenski izveštaj" />
+        </form>
+        <script>document.body.style.zoom = "200%"; /* Ovo ne radi u Firefox-u. */</script>
+    </center></body>
+</html>
